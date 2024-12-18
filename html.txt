@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eu Te Amo</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Corpo da página */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffb6c1;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            margin: 0;
+        }
+
+        /* Container do texto */
+        .container {
+            text-align: center;
+            position: relative;
+        }
+
+        /* Estilo da frase */
+        h1 {
+            font-size: 4em;
+            color: #fff;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        /* Estilo dos corações */
+        .heart {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3em;
+            color: red;
+            animation: pulse 1.5s infinite;
+        }
+
+        /* Animação de pulsação */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 0.8;
+            }
+            50% {
+                transform: scale(1.2);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 0.8;
+            }
+        }
+
+        /* Efeito de corações flutuantes */
+        .floating-heart {
+            position: absolute;
+            animation: float 5s ease-in-out infinite;
+            opacity: 0.8;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-100px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Eu Te Amo</h1>
+        <div class="heart">??</div>
+
+        <!-- Corações flutuantes -->
+        <div class="floating-heart" style="left: 20%; animation-duration: 6s;">??</div>
+        <div class="floating-heart" style="left: 60%; animation-duration: 5s;">??</div>
+        <div class="floating-heart" style="left: 80%; animation-duration: 7s;">??</div>
+    </div>
+</body>
+</html>
